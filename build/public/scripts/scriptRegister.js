@@ -91,7 +91,7 @@ function register(event) {
                 }
             } catch (e) {
                 Swal.fire({
-                    text: 'Error en la respuesta del servidor',
+                    text: ("Error: "+e),
                     icon: 'error',
                     confirmButtonText: 'OK'
                 });

@@ -36,10 +36,10 @@ header nav a {
 }
 
 header nav a.active {
-    background: #73d655;
+    background: #479132;
 }
 header nav a:hover {
-    background: #73d655;
+    background: #479132;
 }
 
 header nav:hover > a:not(:hover) {
@@ -233,17 +233,30 @@ header nav:hover > a:not(:hover) {
 }
 
 .about {
-    padding: 50px;
-    background: rgb(67, 145, 50);
-    color: white;
+    background: rgba(67, 145, 50);
+    color: rgb(255, 255, 255);
     position: relative;
+    text-align: center;
+    padding: 20px;
     z-index: 100;
 }
 
+
+.about p{
+    color: rgb(255, 255, 255);
+    position: relative;
+    text-align: justify;
+    padding: 20px;
+    z-index: 100;
+}
+
+.aboutnuevo{
+    background: rgba(#915D32);
+}
 .aboutSpam {
     padding: 50px;
     background: rgb(56, 50, 145);
-    color: white;
+    color: rgb(255, 255, 255);
     position: relative;
     z-index: 100;
 }
@@ -286,4 +299,24 @@ header nav:hover > a:not(:hover) {
 
 .about h1 {
     font-size: 40px;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-right: 70px;
+    margin-left: 70px;
+    text-align: justify;
+}
+.scroll-left {
+    animation: scrollLeft 5s linear 2;
+}
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%); 
+    }
 }
