@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function loadUser() {
         const xhttp = new XMLHttpRequest();
-        xhttp.open("GET", "http://localhost:4000/api/user/profile");
+        xhttp.open("GET", "https://proyectoapi-ciberseguridadgamificacion.onrender.com/api/user/profile");
         xhttp.setRequestHeader("Content-Type", "application/json");
         xhttp.setRequestHeader("x-access-token", jwt);
         xhttp.send();
