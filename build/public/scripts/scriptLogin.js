@@ -52,6 +52,10 @@ function login(event) {
                     });
                 }
             } else {
+                // Aquí manejamos los errores de respuesta del servidor
+                console.error('HTTP error:', this.status);
+                console.log('Response text:', this.responseText);
+
                 try {
                     const response = JSON.parse(this.responseText);
                     Swal.fire({
@@ -62,7 +66,7 @@ function login(event) {
                 } catch (error) {
                     console.error('Error parsing error response:', error);
                     Swal.fire({
-                        text: 'Error en la respuesta del servidor',
+                        text: 'Error en la respuesta de error del servidor',
                         icon: 'error',
                         confirmButtonText: 'OK'
                     });
