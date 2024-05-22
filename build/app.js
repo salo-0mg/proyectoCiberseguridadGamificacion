@@ -19,6 +19,9 @@ app.set('pkg', _package["default"]);
 app.use((0, _morgan["default"])("dev"));
 app.use(_express["default"]["static"](path.join(__dirname, 'public')));
 app.use(_express["default"].json());
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 app.use('/api/products', _products["default"]); // products
 app.use('/api/auth', _auth["default"]); // auth
 app.use('/api/user', _user["default"]); // user

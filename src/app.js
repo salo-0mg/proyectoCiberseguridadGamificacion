@@ -19,6 +19,10 @@ app.use(morgan("dev"))
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
 app.use('/api/products', productRoutes); // products
 app.use('/api/auth', authRoutes); // auth
 app.use('/api/user', userRoutes); // user
