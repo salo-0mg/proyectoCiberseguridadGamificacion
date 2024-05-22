@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title> Proyecto | Perfil Usuario </title>
+<link rel="stylesheet" href="styles/styleProfile.css">
+</head>
+<body>
+<section class="main">
+    <div class="grid">
+        <div class="profile-card">
+            <div class="image">
+            <img src="assets/user.png" class="profile-pic">
+        </div>
+        <div class="data">
+            <h2 id="username">Usuario</h2>
+            <span>Correo</span>
+            <span id="email" class="infoUser">-</span>
+            <span>Fecha Nacimiento</span>
+            <span id="birth" class="infoUser">-</span>
+        </div>
+        <div class="buttons">
+            <a class="btn" onclick="logout()">Cerrar Sesión</a>
+        </div>
+        </div>
+<div class="profile-card">
+    <h2>Juego Spam Global ✉️</h2>
+    <div class="row">
+    <div class="info">
+        <h3>Puntaje Promedio de los Usuarios</h3>
+        <span id="avg_score_spam">-</span>
+    </div>
+    </div>
+    <div class="info">
+        <span id="graph_avg_score_spam">-</span>
+    </div>
+</div>
+    <div class="profile-card">
+        <h2>Juego Phishing Global🎣</h2>
+        <div class="row">
+            <div class="info">
+                <h3>Puntaje Promedio de los Usuarios</h3>
+                <span id="avg_score_phishing">-</span>
+            </div>
+            </div>
+            <div class="info">
+                <span id="graph_avg_score_phishing">-</span>
+            </div>
+        
+    </div>
+    </div>
+</section>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="scripts/scriptProfileA.js"></script>
+<script src="scripts/scriptLogout.js"></script>
+</body>
+</html>

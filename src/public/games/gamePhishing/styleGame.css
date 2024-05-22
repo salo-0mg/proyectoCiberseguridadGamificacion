@@ -1,0 +1,28 @@
+body {
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+canvas {
+    background: rgb(71, 196, 224);
+    border: solid rgb(61, 252, 47) 5px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.buttons .btn {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    padding: 8px 25px;
+    border-radius: 25px;
+    font-size: 18px;
+    white-space: nowrap;
+    background-color: #237630;
+}
+.buttons .btn:hover {
+    box-shadow: inset 0 5px 20px rgba(0, 0, 0, 0.4);
+}

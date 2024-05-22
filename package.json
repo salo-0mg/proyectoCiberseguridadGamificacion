@@ -1,0 +1,31 @@
+{
+  "name": "proyecto",
+  "version": "1.0.0",
+  "description": "PROTOTIPO - PROYECTO DE GRADO PAULA BARRERA & SALOMÓN FORERO",
+  "main": "index.js",
+  "scripts": {
+    "build" : "babel src --out-dir build", 
+    "dev": "nodemon src/index.js --exec babel-node",
+    "start" : "node build/index.js" 
+  },
+  "keywords": [],
+  "author": "Pau & Salo",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.3.5",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.5",
+    "@babel/core": "^7.24.5",
+    "@babel/node": "^7.23.9",
+    "@babel/preset-env": "^7.24.5",
+    "nodemon": "^3.1.0"
+  }
+}

@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>JUEGO PHISHING</title>
+    <link rel="stylesheet" href="styleGame.css">
+    <script src="./script/scriptGame.js"></script>
+</head>
+
+<body>
+    <h1>Juego de Phishing</h1>
+    <h2>Moverte: ⬅️➡️ Disparar: Espacio</h2>
+    <canvas id="canvas" width="960" height="500">
+        Tu navegador no soporta el canvas de HTML5
+    </canvas>
+    <br>
+    <button class="button" id='backBtn' onclick="backBtn()">Volver al perfil</button>
+    <br>
+    <audio id="boing">
+        <source src="sonidos/boing.mp3">
+        <source src="sonidos/boing.ogg">
+    </audio>
+    <audio id="disparo">
+        <source src="sonidos/disparo.mp3">
+        <source src="sonidos/disparo.ogg">
+    </audio>
+    <audio id="intro">
+        <source src="sonidos/intro.mp3">
+        <source src="sonidos/intro.ogg">
+    </audio>
+    <audio id="fin">
+        <source src="sonidos/gameOver.mp3">
+        <source src="sonidos/gameOver.ogg">
+    </audio>
+</body>
+</html>

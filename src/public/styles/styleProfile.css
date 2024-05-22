@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+@import url('stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.grid{
+  display: grid;
+  gap: 50px;
+  grid-template-columns: 33% 33% 33%;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(images/back.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 25px;
+  padding: 30px;
+  border: 1px solid #ffffff40;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+}
+
+.image .profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+.juego1{
+  text-align: justify;
+}
+.juego2{
+  text-align: center;
+}
+.data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+.data h2 {
+  font-size: 33px;
+  font-weight: 600;
+}
+span {
+  font-size: 18px;
+}
+
+.infoUser {
+  font-size: 18px;
+  color: #4d4c4c;
+}
+
+.row {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin-top: 30px;
+}
+.row .info {
+  text-align: center;
+  padding: 0 20px;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.buttons .btn {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+  padding: 8px 25px;
+  border-radius: 25px;
+  font-size: 18px;
+  white-space: nowrap;
+  background-color: #237630;
+}
+.buttons .btn:hover {
+  box-shadow: inset 0 5px 20px rgba(0, 0, 0, 0.4);
+}
