@@ -55,7 +55,7 @@ function register(event) {
     const xhttp = new XMLHttpRequest();
 
     xhttp.open("POST", "http://localhost:4000/api/auth/signup");
-    xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+    xhttp.setRequestHeader("Content-Type", "application/json");
     xhttp.send(JSON.stringify({
         name: name,
         lastname: lastname,

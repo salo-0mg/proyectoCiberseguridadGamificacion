@@ -1,21 +1,12 @@
-document.addEventListener("DOMContentLoaded", function () {
-    var jwt = localStorage.getItem("jwt");
-    if (jwt) {
-        // Aquí podrías verificar el token y determinar el perfil adecuado, si fuera necesario
-        window.location.href = './profile.html';
-    }
-});
-
 function login(event) {
-    // Evita el envío predeterminado del formulario
     event.preventDefault();
 
     const email = document.getElementById("emailSignin").value;
     const password = document.getElementById("passwordSignin").value;
 
     const xhttp = new XMLHttpRequest();
-    xhttp.open("POST", "http://localhost:4000/api/auth/signin");
-    xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+    xhttp.open("POST", "https://proyectoapi-ciberseguridadgamificacion.onrender.com/api/auth/signin");
+    xhttp.setRequestHeader("Content-Type", "application/json");
 
     xhttp.onreadystatechange = function () {
         if (this.readyState === 4) {
@@ -29,7 +20,7 @@ function login(event) {
                         confirmButtonText: 'OK'
                     }).then((result) => {
                         if (result.isConfirmed) {
-                            const roles = response.roles.map(role => role.name); // Extrae los nombres de los roles
+                            const roles = response.roles.map(role => role.name);
                             if (roles.includes("admin")) {
                                 window.location.href = './profileA.html';
                             } else if (roles.includes("user")) {
@@ -52,10 +43,6 @@ function login(event) {
                     });
                 }
             } else {
-                // Aquí manejamos los errores de respuesta del servidor
-                console.error('HTTP error:', this.status);
-                console.log('Response text:', this.responseText);
-
                 try {
                     const response = JSON.parse(this.responseText);
                     Swal.fire({
@@ -66,7 +53,7 @@ function login(event) {
                 } catch (error) {
                     console.error('Error parsing error response:', error);
                     Swal.fire({
-                        text: 'Error en la respuesta de error del servidor',
+                        text: 'Error en la respuesta del servidor',
                         icon: 'error',
                         confirmButtonText: 'OK'
                     });
@@ -81,5 +68,5 @@ function login(event) {
     });
     xhttp.send(requestData);
 
-    return false; // Evita que el formulario se envíe
+    return false;
 }

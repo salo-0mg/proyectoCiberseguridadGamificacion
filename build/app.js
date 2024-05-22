@@ -12,6 +12,7 @@ var _products = _interopRequireDefault(require("./routes/products.routes"));
 var _auth = _interopRequireDefault(require("./routes/auth.routes"));
 var _user = _interopRequireDefault(require("./routes/user.routes"));
 var _path = _interopRequireDefault(require("path"));
+var _cors = _interopRequireDefault(require("cors"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 var app = (0, _express["default"])();
 
@@ -28,6 +29,7 @@ app.use(_express["default"].json());
 // Configurar carpeta de archivos estáticos
 var staticPath = _path["default"].join(__dirname, 'public');
 app.use(_express["default"]["static"](staticPath));
+app.use((0, _cors["default"])());
 
 // Rutas
 app.use('/api/products', _products["default"]);

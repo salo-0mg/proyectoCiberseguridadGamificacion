@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function loadUser() {
         const xhttp = new XMLHttpRequest();
         xhttp.open("GET", "http://localhost:4000/api/user/profileA");
-        xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+        xhttp.setRequestHeader("Content-Type", "application/json");
         xhttp.setRequestHeader("x-access-token", jwt);
         xhttp.send();
         xhttp.onreadystatechange = function () {

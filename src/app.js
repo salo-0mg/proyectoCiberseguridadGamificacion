@@ -6,6 +6,7 @@ import productRoutes from './routes/products.routes';
 import authRoutes from './routes/auth.routes';
 import userRoutes from './routes/user.routes';
 import path from 'path';
+import cors from 'cors';
 
 const app = express();
 
@@ -22,6 +23,9 @@ app.use(express.json());
 // Configurar carpeta de archivos estáticos
 const staticPath = path.join(__dirname, 'public');
 app.use(express.static(staticPath));
+
+
+app.use(cors());
 
 // Rutas
 app.use('/api/products', productRoutes);
