@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 5%;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+header h1 {
+    font-size: 40px;
+    color: white;
+}
+header nav {
+    display: flex;
+    gap: 30px;
+}
+header nav a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 99px;
+    transition: 0.3s;
+    color: white;
+}
+
+header nav a.active {
+    background: #73d655;
+}
+header nav a:hover {
+    background: #73d655;
+}
+
+header nav:hover > a:not(:hover) {
+    background: none;
+}
+
+.Spam nav a.active {
+    background: #5755d6;
+}
+
+.Spam nav a:hover {
+    background: #5755d6;
+}
+.Spam nav:hover > a:not(:hover) {
+    background: none;
+}
+
+.Phishing nav a.active {
+    background: #d68b55;
+}
+
+.Phishing nav a:hover {
+    background: #d68255;
+}
+
+.Phishing nav:hover > a:not(:hover) {
+    background: none;
+}
+
+.SE nav a.active {
+    background: #a755d6;
+}
+
+.SE nav a:hover {
+    background: #b855d6;
+}
+
+.SE nav:hover > a:not(:hover) {
+    background: none;
+}
+
+.Autor nav a.active {
+    background: #cfd655;
+}
+
+.Autor nav a:hover {
+    background: #d6cf55;
+}
+
+.Autor nav:hover > a:not(:hover) {
+    background: none;
+}
+
+.home {
+    display: flex;
+    height: 100dvh;
+    background: linear-gradient(to top, #9af3a7 30%, #d2fbd8);
+    position: relative;
+    overflow: hidden;
+}
+
+.home {
+    display: flex;
+    height: 100dvh;
+    background: linear-gradient(to top, #9af3a7 30%, #d2fbd8);
+    position: relative;
+    overflow: hidden;
+}
+
+.home img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.home .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 60px;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.homeSpam {
+    display: flex;
+    height: 100dvh;
+    background: linear-gradient(to top, #9aa4f3 30%, #d2d3fb);
+    position: relative;
+    overflow: hidden;
+}
+
+.homeSpam img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.homeSpam .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 80px;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.homePhishing {
+    display: flex;
+    height: 100dvh;
+    background: linear-gradient(to top, #f3c59a 30%, #fbe9d2);
+    position: relative;
+    overflow: hidden;
+}
+
+.homePhishing img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.homePhishing .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 80px;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.homeSE {
+    display: flex;
+    height: 100dvh;
+    background: linear-gradient(to top, #da9af3 30%, #eed2fb);
+    position: relative;
+    overflow: hidden;
+}
+
+.homeSE img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.homeSE .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 80px;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.homeAutor {
+    display: flex;
+    height: 100dvh;
+    background: linear-gradient(to top, #f0f39a 30%, #f8fbd2);
+    position: relative;
+    overflow: hidden;
+}
+
+.homeAutor img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.homeAutor .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 80px;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.about {
+    padding: 50px;
+    background: rgb(67, 145, 50);
+    color: white;
+    position: relative;
+    z-index: 100;
+}
+
+.aboutSpam {
+    padding: 50px;
+    background: rgb(56, 50, 145);
+    color: white;
+    position: relative;
+    z-index: 100;
+}
+
+.aboutPhishing {
+    padding: 50px;
+    background: rgb(145, 93, 50);
+    color: white;
+    position: relative;
+    z-index: 100;
+}
+
+.aboutSE {
+    padding: 50px;
+    background: rgb(128, 50, 145);
+    color: white;
+    position: relative;
+    z-index: 100;
+}
+
+.aboutAutor {
+    padding: 50px;
+    background: rgb(145, 132, 50);
+    color: white;
+    position: relative;
+    z-index: 100;
+}
+
+.about h1{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.aboutAutor h1{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 40px;
+}

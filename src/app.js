@@ -20,7 +20,7 @@ app.use(morgan('dev'));
 app.use(express.json());
 
 // Configurar carpeta de archivos estáticos
-const staticPath = path.join(__dirname, '..', 'public');
+const staticPath = path.join(__dirname, 'public');
 app.use(express.static(staticPath));
 
 // Rutas
@@ -31,14 +31,6 @@ app.use('/api/user', userRoutes);
 // Ruta raíz para manejar solicitudes a "/"
 app.get('/', (req, res) => {
     res.sendFile(path.join(staticPath, 'index.html'));
-});
-
-// Obtener el puerto del entorno o usar el puerto 5000 por defecto
-const port = process.env.PORT || 5000;
-
-// Iniciar el servidor
-app.listen(port, () => {
-    console.log(`Server listening on port: ${port}`);
 });
 
 export default app;

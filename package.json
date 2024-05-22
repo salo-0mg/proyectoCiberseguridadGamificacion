@@ -4,9 +4,9 @@
   "description": "PROTOTIPO - PROYECTO DE GRADO PAULA BARRERA & SALOMÓN FORERO",
   "main": "index.js",
   "scripts": {
-    "build" : "babel src --out-dir build", 
+    "build": "babel src --out-dir build && cpx \"src/public/**/*\" build/public",
     "dev": "nodemon src/index.js --exec babel-node",
-    "start" : "node build/index.js" 
+    "start": "node build/index.js"
   },
   "keywords": [],
   "author": "Pau & Salo",
@@ -26,6 +26,7 @@
     "@babel/core": "^7.24.5",
     "@babel/node": "^7.23.9",
     "@babel/preset-env": "^7.24.5",
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.1.0",
+    "cpx": "^1.5.0"
   }
 }
