@@ -214,13 +214,12 @@ const sendScoreToBackend = (score) => {
         body: JSON.stringify({ score })
     };
 
-    fetch('http://localhost:4000/api/user/setPhishingScore', requestOptions)
+    fetch('https://proyectoapi-ciberseguridadgamificacion.onrender.com/api/user/setPhishingScore', requestOptions)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Error al enviar el puntaje al servidor');
             }
             console.log('Puntaje enviado correctamente al servidor');
-            // Aquí puedes redirigir a la página de perfil u otra acción necesaria
         })
         .catch(error => console.error('Error:', error));
 };

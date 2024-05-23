@@ -228,7 +228,7 @@ const sendScoreToBackend = (score) => {
         body: JSON.stringify({ score })
     };
 
-    fetch('http://localhost:4000/api/user/setSpamScore', requestOptions)
+    fetch('https://proyectoapi-ciberseguridadgamificacion.onrender.com/api/user/setSpamScore', requestOptions)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Error al enviar el puntaje al servidor');
