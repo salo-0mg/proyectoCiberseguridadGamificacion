@@ -113,7 +113,7 @@ FUNCIONES
 ************/
 const caratula=()=>{
 	let imagen = new Image();
-	imagen.src = "imagenes/caratula.jpg";
+	imagen.src = "imagenes/caratula.jpeg";
 	imagen.onload =()=>{
 		game.ctx.drawImage(imagen,0,0);
 	}

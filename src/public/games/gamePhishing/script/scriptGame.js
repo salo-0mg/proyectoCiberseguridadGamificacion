@@ -114,7 +114,7 @@ class Enemigo {
 // Funciones
 const caratula = () => {
     const imagen = new Image();
-    imagen.src = "imagenes/cara.webp";
+    imagen.src = "imagenes/caratula.jpeg";
     imagen.onload = () => {
         game.ctx.drawImage(imagen, 0, 0);
     };
