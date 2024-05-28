@@ -5,6 +5,13 @@
     padding: 20px;
 }
 
+.aboutnuevo1 {
+    background: rgb(128, 50, 145);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
 .video-section {
     display: flex;
     flex-direction: row; /* Alinea los elementos en fila */
