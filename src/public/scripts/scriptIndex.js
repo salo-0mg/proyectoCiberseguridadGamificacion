@@ -17,3 +17,17 @@ document.addEventListener('scroll', function() {
     mount1.style.marginBottom = -value * 1.1 + 'px'
     mount2.style.marginBottom = -value * 1.2 + 'px'
 })
+
+
+// Funciones de redirección al juego en la pag ITCH.IO (Juego del Laberinto)
+
+function redirectOnRightClick(event, url) {
+    event.preventDefault();
+    if (event.button === 2) { // El botón 2 es el botón derecho del mouse
+        window.location.href = url;
+    }
+}
+function disableContextMenu(event) {
+    event.preventDefault();
+}
+

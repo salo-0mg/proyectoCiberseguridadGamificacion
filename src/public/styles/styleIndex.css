@@ -301,6 +301,14 @@ header nav:hover > a:not(:hover) {
     font-size: 40px;
 }
 
+.aboutnuevo img {
+    width: 1280px;
+    height: 720px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 .content-wrapper {
     display: flex;
     justify-content: center;
