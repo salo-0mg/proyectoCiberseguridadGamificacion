@@ -2,7 +2,6 @@ import express from 'express';
 import morgan from 'morgan';
 import pkg from '../package.json';
 import { createRoles } from './libs/initialSetup.js';
-import productRoutes from './routes/products.routes';
 import authRoutes from './routes/auth.routes';
 import userRoutes from './routes/user.routes';
 import path from 'path';
@@ -28,7 +27,6 @@ app.use(express.static(staticPath));
 app.use(cors());
 
 // Rutas
-app.use('/api/products', productRoutes);
 app.use('/api/auth', authRoutes);
 app.use('/api/user', userRoutes);
 

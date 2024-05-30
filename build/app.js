@@ -8,7 +8,6 @@ var _express = _interopRequireDefault(require("express"));
 var _morgan = _interopRequireDefault(require("morgan"));
 var _package = _interopRequireDefault(require("../package.json"));
 var _initialSetup = require("./libs/initialSetup.js");
-var _products = _interopRequireDefault(require("./routes/products.routes"));
 var _auth = _interopRequireDefault(require("./routes/auth.routes"));
 var _user = _interopRequireDefault(require("./routes/user.routes"));
 var _path = _interopRequireDefault(require("path"));
@@ -32,7 +31,6 @@ app.use(_express["default"]["static"](staticPath));
 app.use((0, _cors["default"])());
 
 // Rutas
-app.use('/api/products', _products["default"]);
 app.use('/api/auth', _auth["default"]);
 app.use('/api/user', _user["default"]);
 
